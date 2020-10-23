@@ -84,7 +84,12 @@ export function initGapi(gapiSession: GapiSession) {
     MatTableModule,
     MatToolbarModule,
     MatCheckboxModule,
-    StoreModule.forRoot(reducers, { metaReducers }),
+    StoreModule.forRoot(reducers, {
+      metaReducers,
+      runtimeChecks: {
+        strictActionWithinNgZone: true
+      }
+    }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forRoot([AuthEffects])
   ],
