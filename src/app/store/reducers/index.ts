@@ -5,7 +5,7 @@ import {
   createSelector,
   MetaReducer
 } from '@ngrx/store';
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 
 
 // tslint:disable-next-line:no-empty-interface

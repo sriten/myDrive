@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AppSession } from './utils/app.session';
+import { AppSession } from './session/app.session';
 import { AppService } from './services/app.service';
 
 @Injectable()
